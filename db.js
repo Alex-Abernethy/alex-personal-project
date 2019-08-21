@@ -6,5 +6,6 @@ module.exports = {
   getTerrain: getTerrain,
 }
 
-function getTerrain (db = connection)
-  return db('world').select
+function getTerrain (db = connection) {
+  return db('world').select()
+}
