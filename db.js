@@ -4,8 +4,14 @@ const connection = require('knex')(config)
 
 module.exports = {
   getTerrain: getTerrain,
+  buildworld: buildWorld,
 }
 
 function getTerrain (db = connection) {
   return db('world').select()
+}
+
+function buildWorld (world, db = connection) {
+  return db('world')
+  .insert(world)
 }
