@@ -1,3 +1,7 @@
+h1 {
+  font-size: 40pt;
+}
+
 #grid {
   display: grid;
   grid-auto-columns: 50px;
@@ -26,8 +30,4 @@
 
 .mountain {
   background-color: gray;
-}
-
-h1 {
-  font-size: 40pt;
 }
