@@ -1,8 +1,9 @@
 exports.up = (knex, Promise) => {
-  return knex.schema.createTable('users', (table) => {
+  return knex.schema.createTable('world', (table) => {
     table.increments('id').primary()
-    table.string('name')
-    table.string('email')
+    table.interger('x')
+    table.interger('y')
+    table.string('terrain')
   })
 }
 

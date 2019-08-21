@@ -1,0 +1,30 @@
+exports.seed = function (knex, Promise) {
+  return knex('world').insert([
+    { id: 1, x: 0, y: 0, terrain: 'forrest' },
+    { id: 2, x: 0, y: 0, terrain: 'forrest' },
+    { id: 3, x: 0, y: 0, terrain: 'forrest' },
+    { id: 4, x: 0, y: 0, terrain: 'mountain' },
+    { id: 5, x: 0, y: 0, terrain: 'mountain' },
+    { id: 6, x: 0, y: 0, terrain: 'forrest' },
+    { id: 7, x: 0, y: 0, terrain: 'sea' },
+    { id: 8, x: 0, y: 0, terrain: 'sea' },
+    { id: 9, x: 0, y: 0, terrain: 'forrest' },
+    { id: 10, x: 0, y: 0, terrain: 'forrest' },
+    { id: 11, x: 0, y: 0, terrain: 'forrest' },
+    { id: 12, x: 0, y: 0, terrain: 'forrest' },
+    { id: 13, x: 0, y: 0, terrain: 'forrest' },
+    { id: 14, x: 0, y: 0, terrain: 'lake' },
+    { id: 15, x: 0, y: 0, terrain: 'lake' },
+    { id: 16, x: 0, y: 0, terrain: 'forrest' },
+    { id: 17, x: 0, y: 0, terrain: 'desert' },
+    { id: 18, x: 0, y: 0, terrain: 'desert' },
+    { id: 19, x: 0, y: 0, terrain: 'forrest' },
+    { id: 20, x: 0, y: 0, terrain: 'forrest' },
+    { id: 21, x: 0, y: 0, terrain: 'grassland' },
+    { id: 22, x: 0, y: 0, terrain: 'grassland' },
+    { id: 23, x: 0, y: 0, terrain: 'forrest' },
+    { id: 24, x: 0, y: 0, terrain: 'forrest' },
+    { id: 25, x: 0, y: 0, terrain: 'forrest' },
+    { id: 26, x: 0, y: 0, terrain: 'forrest' }
+  ])
+}
