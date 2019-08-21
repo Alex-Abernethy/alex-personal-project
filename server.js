@@ -2,6 +2,7 @@ const express = require('express')
 const hbs = require('express-handlebars')
 
 const homeRoute = require('./routes/home')
+const genRoute = require('./routes/worldGen')
 
 const server = express()
 
@@ -18,5 +19,6 @@ server.use(express.static('public'))
 // Routes
 
 server.use('/', homeRoute)
+server.use('/', genRoute)
 
 module.exports = server
