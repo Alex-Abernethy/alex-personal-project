@@ -4,7 +4,7 @@ const connection = require('knex')(config)
 
 module.exports = {
   getTerrain: getTerrain,
-  buildworld: buildWorld,
+  buildWorld: buildWorld,
 }
 
 function getTerrain (db = connection) {
@@ -14,4 +14,7 @@ function getTerrain (db = connection) {
 function buildWorld (world, db = connection) {
   return db('world')
   .insert(world)
+  .then(
+    console.log('inserted')
+  )
 }

@@ -1,5 +1,5 @@
 const express = require('express')
-const genWorld = require('../functions/genworld')
+const genWorld = require('../functions/genWorld')
 
 const db = require('../db')
 
@@ -10,7 +10,7 @@ router.get('/worldGen', (req, res) => {
 })
 
 router.post('/worldGen', (req, res) => {
-  const world = genworld(req.body.x, req.body.y)
+  var world = genWorld(req.body.X, req.body.Y)
   db.buildWorld(world)
   res.redirect('/')
 })
