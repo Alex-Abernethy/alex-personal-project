@@ -3,6 +3,7 @@ const hbs = require('express-handlebars')
 
 const homeRoute = require('./routes/home')
 const genRoute = require('./routes/worldGen')
+const worldMod = require('./routes/worldMod')
 
 const server = express()
 
@@ -20,5 +21,6 @@ server.use(express.static('public'))
 
 server.use('/', homeRoute)
 server.use('/', genRoute)
+server.use('/', worldMod)
 
 module.exports = server
